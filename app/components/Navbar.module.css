@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    padding: 4em;
+}
+
+.home {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.home:hover {
+    text-decoration: underline;
+}
