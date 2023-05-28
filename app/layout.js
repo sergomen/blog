@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 
 export const metadata = {
   title: "Kakashi's Blog",
-  description: 'Designed and Built by Kakashi',
+  description: 'There are articles on programming, motivation, and goal achievement.',
 }
 
 const header = (
