@@ -2,7 +2,7 @@ import './globals.css';
 import Navbar from './components/Navbar';
 
 export const metadata = {
-  title: "Kakashi's Blog",
+  title: "seriu's Blog",
   description: 'There are articles on programming, motivation, and goal achievement.',
 }
 
@@ -17,7 +17,7 @@ const header = (
 const footer = (
   <footer>
     <div className="border-t border-slate-400 text-center text-slate-400 py-5 my-8 rounded-md">
-      <h3>Designed & Developed by Kakashi.</h3>
+      <h3>Designed & Developed by seriu.</h3>
       <p>2023 © All Rights Reserved.</p>
     </div>
   </footer>

@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import PostPreview from './components/PostPreview';
-import Link from 'next/link';
 
 import getPostMetadata from './utils/getPostMetadata';
 
@@ -19,7 +18,7 @@ export default function HomePage() {
         className="mx-auto"
         alt="kakashi"
       />
-      drawed by <a href="https://www.deviantart.com/ryantaio/art/Kakashi-Fan-Art-908326015" className="text-sky-400">ryntaio</a>
+      drawed by <a href="https://www.deviantart.com/ryantaio/art/Kakashi-Fan-Art-908326015" className="text-sky-400">ryantaio</a>
       <br />
       <br />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">{postPreviews}</div>
