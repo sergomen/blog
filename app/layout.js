@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="dark:bg-slate-800 mx-auto max-w-2xl px-6">
+        <div className="mx-auto max-w-2xl px-6">
           {header}
           {children}
           {footer}
