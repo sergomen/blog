@@ -1,8 +1,8 @@
 ---
 title: Google Sheets. Highlighting Rows Based on the Current Date via Conditional Formatting
-# subtitle: Learning Google Sheets Conditional Formatting
+subtitle: Learning Google Sheets Conditional Formatting
 date: 'May 29, 2023'
-description: Learning Google Sheets Conditional Formatting
+# description: Learning Google Sheets Conditional Formatting
 thumbnailUrl: ''
 tags: ['google sheets', 'conditional formatting', 'highlighting a row depending on the current date']
 ---

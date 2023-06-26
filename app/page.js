@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import PostPreview from './components/PostPreview';
 
-import getPostMetadata from './utils/getPostMetadata';
+import { getSortedPostsData } from './utils/getSortedPostsData';
 
 export default function HomePage() {
-  const postMetadata = getPostMetadata();
+  const postMetadata = getSortedPostsData();
   const postPreviews = postMetadata.map((post) => (
     <PostPreview key={post.slug} {...post} />
   ));

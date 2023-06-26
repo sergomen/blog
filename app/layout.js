@@ -2,8 +2,8 @@ import './globals.css';
 import Navbar from './components/Navbar';
 
 export const metadata = {
-  title: "seriu's Blog",
-  description: 'There are articles on programming, motivation, and goal achievement.',
+  title: "seriu&apos;s Blog",
+  description: 'There are articles about programming, motivation, and goal achievement.',
 }
 
 const header = (
@@ -17,8 +17,7 @@ const header = (
 const footer = (
   <footer>
     <div className="border-t border-slate-400 text-center text-slate-400 py-5 my-8 rounded-md">
-      <h3>Designed & Developed by seriu.</h3>
-      <p>2023 © All Rights Reserved.</p>
+      <p>2023 © created by seriu</p>
     </div>
   </footer>
 )
@@ -27,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="mx-auto max-w-2xl px-6">
+        <div className="dark:bg-slate-800 mx-auto max-w-2xl px-6">
           {header}
           {children}
           {footer}
