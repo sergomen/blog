@@ -1,7 +1,7 @@
 ---
 title: TypeScript. Type ‘Promise<() ⇒ Promise<any>>’ is not assignable to type ‘Promise<User>’
 subtitle: My first acquaintance with Promise in TypeScript
-date: 'June 22, 2023'
+date: 'June 26, 2023'
 # description: Learning Google Sheets Conditional Formatting
 thumbnailUrl: ''
 tags: ['typescript', 'promise', 'error']
