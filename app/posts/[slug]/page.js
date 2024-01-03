@@ -10,7 +10,6 @@ import Link from 'next/link'
 
 export const generateStaticParams = async() => {
   const posts = getSortedPostsData()
-
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -45,6 +44,7 @@ export function generateMetadata(props) {
 const PostPage = (props) => {
   const posts = getSortedPostsData()
   const slug = props.params.slug;
+  // console.log('Slug', slug);
 
   if (!posts.find(post => post.slug === slug)) notFound()
 
