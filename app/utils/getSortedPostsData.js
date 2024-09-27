@@ -24,7 +24,7 @@ export function getSortedPostsData () {
       date: matterResult.data.date,
       subtitle: matterResult.data.subtitle,
     }
-
+    // console.log(Date.parse(blogPost.date));
     return blogPost
   })
 
@@ -44,14 +44,15 @@ export function getSortedPostsData () {
   // });
 
   // return posts
-
+  // console.log(allPostsData.sort((a, b) => a.date > b.date ? 1 : -1));
   // Combine the data with the id
-  return allPostsData.sort((a, b) => a.date > b.date ? 1 : -1)
+  return allPostsData.sort((a, b) => Date.parse(a.date) < Date.parse(b.date) ? 1 : -1)
 };
 
 export function getPostData(slug) {
-  const fullPath = path.join(postsDirectory, `${slug}.md`)
-  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const fullPath = path.join(postsDirectory, `${slug}.md`);
+  // console.log(fullPath, postsDirectory, `${slug}`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
 
   const matterResult = matter(fileContents)
   

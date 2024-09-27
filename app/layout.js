@@ -19,7 +19,7 @@ const current_year = new Date().getFullYear();
 const footer = (
   <footer>
     <div className="border-t border-slate-400 text-center text-slate-400 py-5 my-8 rounded-md">
-      <p>© 2023-{current_year} Created by seriu</p>
+      <p>© 2023-{current_year} Created by <a href="https://t.me/+uyadKFfc6TY0ODYy">seriu</a></p>
     </div>
   </footer>
 )
