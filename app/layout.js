@@ -1,5 +1,6 @@
 import './globals.css';
 import Navbar from './components/Navbar';
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "seriu&apos;s Blog",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <div className="mx-auto max-w-2xl px-6">
           {header}
           {children}
+          <Analytics />
           {footer}
         </div>
       </body>
