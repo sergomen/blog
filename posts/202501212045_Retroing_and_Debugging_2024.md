@@ -31,4 +31,4 @@ I realized that you don't need to publish an MVP that nobody is interested in. I
 
 ***
 
-[retroing]: /images/202501212045_Retro’ing_and_Debugging_2024"
+[retroing]: /images/202501212045_Retroing_and_Debugging_2024.png "retroing"
