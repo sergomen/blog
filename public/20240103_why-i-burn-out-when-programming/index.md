@@ -8,7 +8,8 @@ tags: ['inspiration', 'burning out', 'motivation']
 ---
 <base target="_blank">
 
-![Mulan][mulan]
+![Mulan](./1.png "Mulan")
+
 
 Feedback for developers is essential. And it's no matter whether it comes from future clients, the compiler, or random passers-by.
 
@@ -60,4 +61,4 @@ But I finally realized the meaning of programming and what I want to achieve. Pr
 
 ***
 
-[mulan]: /images/3/mulan_i_will_make_a_man_out_of_you.png "Mulan"
+<!-- [mulan]: ./3.png "Mulan" -->

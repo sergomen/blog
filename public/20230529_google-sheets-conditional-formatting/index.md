@@ -23,15 +23,15 @@ Glad you're asking.)
 # Solution
 
 Go to the main menu on the top of your window in Google Sheets and find `Format`.
-![Conditional Formatting in Main Menu](/images/1/menu_conditional_formatting.png "Conditional Formatting in Main Menu")
+![Conditional Formatting in Main Menu](./1.png "Conditional Formatting in Main Menu")
 
 Now click on Conditional Formatting, and a right sidebar will appear. There you choose a `range` and a `custom formula`.
 
-![Adjusting Conditional Formattings](/images/1/adjusting_conditional_formatting.png "Adjusting Conditional Formatting")
+![Adjusting Conditional Formattings](./2.png "Adjusting Conditional Formatting")
 
 After that, you copy and paste the necessary code into a field for a custom formula.
 
-![Field for Custom Formula](/images/1/field_for_custom_formula.png "Field For Custom Formula")
+![Field for Custom Formula](./3.png "Field For Custom Formula")
 
 I found two ways to achieve this goal.
 
@@ -43,7 +43,7 @@ Use the function below with a range A1:D10.
 
 And it finds the current date in your table if there is one.
 
-![Result of Searching a Current Date](/images/1/first_way.png "Result of Searching a Current Date")
+![Result of Searching a Current Date](./4.png "Result of Searching a Current Date")
 
 It works if you format dates as in the picture. But if you will change to another format, for example, 05/28/2023 or 5/28/23, it doesn't find the current date.
 
@@ -55,7 +55,7 @@ Use the function below with a range A1:D10.
 
 Now you see, it works!
 
-![Result of Searching a Current Date](/images/1/second_way.png "Result of Searching a Current Date")
+![Result of Searching a Current Date](./5.png "Result of Searching a Current Date")
 
 ***
 

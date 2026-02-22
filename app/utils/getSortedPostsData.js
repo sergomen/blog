@@ -1,11 +1,12 @@
+// TODO: This can be deleted
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 
 
-const postsDirectory = path.join(process.cwd(), 'posts')
+const postsDirectory = path.join(process.cwd(), 'public/posts')
 
-export function getSortedPostsData () {
+export function getSortedPostsData() {
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map((fileName) => {
     // Remove ".md" from file name to get slug
