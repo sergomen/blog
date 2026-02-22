@@ -8,7 +8,8 @@ export default async function PostPage({ params }) {
   const { slug } = await params;
 
   const path = await import('node:path');
-  const filePath = path.join(process.cwd(), 'public', slug, 'index.md');
+  // const filePath = path.join(process.cwd(), 'public', slug, 'index.md');
+  const filePath = `${process.cwd()}/public/${slug}/index.md`;
   const file = await readFile(filePath, "utf8");
 
   const { content, data } = matter(file);
