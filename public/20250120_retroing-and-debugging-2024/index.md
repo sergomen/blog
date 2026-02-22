@@ -8,7 +8,7 @@ tags: ['achievements', 'journey']
 ---
 <base target="_blank">
 
-![retroing][retroing]
+![](./1.png)
 
 
 ***
@@ -30,5 +30,3 @@ Overall, 2024 reminded me not to give up and reinforced my belief that I can lea
 I realized that you don't need to publish an MVP that nobody is interested in. I also realized that you shouldn't create projects for others, expecting them to like it. They'll most likely pass you by, and you'll burn out. You need to make projects solely for yourself, for your own satisfaction, or to solve problems that concern your mind and heart. At least this way, you'll be satisfied with the work you've done.
 
 ***
-
-[retroing]: /images/202501212045_Retroing_and_Debugging_2024.png "retroing"

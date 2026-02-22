@@ -8,7 +8,8 @@ tags: ['obsidian', 'zettelkasten']
 ---
 <base target="_blank">
 
-![obsidian_part1][obsidian_part1]
+<!-- ![obsidian_part1][obsidian_part1] -->
+![](./1.png)
 
 This is the first part of a series of articles about Zettelkasten in Obsidian.
 
@@ -28,4 +29,4 @@ For automatic setting of Zettelkasten-index, read in `Templater: Auto-fill Prope
 
 ***
 
-[obsidian_part1]: /images/202409271404_Obsidian_for_Zettelkasten.png "obsidian_part1"
+<!-- [obsidian_part1]: ./1.png "obsidian_part1" -->

@@ -8,7 +8,7 @@ tags: ['typescript', 'promise', 'error']
 ---
 <base target="_blank">
 
-![Promise](/images/2/naruto_promises.png "Naruto Promises")
+![Promise](./1.png "Naruto Promises")
 
 # Introduction
 
@@ -23,7 +23,7 @@ In more detail, you can read about Promise in the related links below the articl
 
 In this article, I will show you how I found a mistake that occurred the error: `Type ‘Promise<() ⇒ Promise<any>>’ is not assignable to type ‘Promise<User>’`.
 
-![Promise is not assignable](/images/2/promise_is_not_assignable.png "Promise is not assignable")
+![Promise is not assignable](./2.png "Promise is not assignable")
 
 # Solution
 
