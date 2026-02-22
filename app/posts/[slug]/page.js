@@ -1,3 +1,5 @@
+// TODO: This can be deleted
+
 // import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 // import matter from 'gray-matter';
@@ -41,18 +43,20 @@ export function generateMetadata(props) {
 //   return matterResult;
 // }
 
-const PostPage = (props) => {
-  const posts = getSortedPostsData()
-  const slug = props.params.slug;
-  // console.log('Slug', slug);
+export default async function PostPage({ params }) {
+  // const posts = getSortedPostsData();
+  // if (!posts.find(post => post.slug === slug)) notFound();
+  const { slug } = await params;
+  console.log("slug", slug);
+  // const filename = "public/" + slug + "/index.md";
+  // console.log(filename);
+  // const file = 
 
-  if (!posts.find(post => post.slug === slug)) notFound()
-
-  const {title, date, contentHTML } = getPostData(slug);
+  // const { title, date, contentHTML } = getPostData(slug);
 
   return (
     <main>
-      <div className="my-12 text-center">
+      {/* <div className="my-12 text-center">
         <h1 className="text-4xl text-sky-500 font-bold text-center mb-4">{title}</h1>
         <p className="text-slate-400 mt-2 text-center">{date}</p>
       </div>
@@ -64,9 +68,7 @@ const PostPage = (props) => {
         <p>
           <Link href="/">Back to home</Link>
         </p>
-      </article>
+      </article> */}
     </main>
   )
 }
-
-export default PostPage
