@@ -1,11 +1,15 @@
-import { readFile } from "fs/promises";
+import { readFile } from "node:fs/promises";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Link from "next/link";
+// import path from "node:path";
 
 export default async function PostPage({ params }) {
   const { slug } = await params;
-  const filePath = path.join(process.cwd(), 'public', slug, 'index.md');
+
+  // const path = await import('node:path');
+  // const filePath = path.join(process.cwd(), 'public', slug, 'index.md');
+  const filePath = `${process.cwd()}/public/${slug}/index.md`;
   const file = await readFile(filePath, "utf8");
 
   const { content, data } = matter(file);
