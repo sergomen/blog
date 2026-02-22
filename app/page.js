@@ -8,7 +8,7 @@ import Link from "next/link";
 async function getPosts() {
   // const path = await import('node:path');
   // const publicDir = path.join(process.cwd(), 'public');
-  const publicDir = `${process.cwd()}/public`;
+  const publicDir = `${process.cwd()}/public`
 
   const entries = await readdir(publicDir, { withFileTypes: true });
   const dirs = entries
