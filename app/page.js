@@ -1,6 +1,6 @@
 import Image from "next/image";
 import PostPreview from "./components/PostPreview";
-import { readdir, readFile } from "fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import matter from "gray-matter";
 import Link from "next/link";
 // import path from 'node:path';
