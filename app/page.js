@@ -4,7 +4,7 @@ import { readdir, readFile } from "fs/promises";
 import matter from "gray-matter";
 import Link from "next/link";
 
-export async function getPosts() {
+async function getPosts() {
   const entries = await readdir("./public/", { withFileTypes: true });
   const dirs = entries
     .filter((entry) => entry.isDirectory())
