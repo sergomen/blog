@@ -2,6 +2,7 @@ import { readFile } from "fs/promises";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Link from "next/link";
+import path from "path";
 
 export default async function PostPage({ params }) {
   const { slug } = await params;
