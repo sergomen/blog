@@ -3,7 +3,7 @@ import PostPreview from "./components/PostPreview";
 import { readdir, readFile } from "fs/promises";
 import matter from "gray-matter";
 import Link from "next/link";
-import path from 'path';
+import path from 'node:path';
 
 async function getPosts() {
   const publicDir = path.join(process.cwd(), 'public');
