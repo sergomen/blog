@@ -3,12 +3,10 @@ import PostPreview from "./components/PostPreview";
 import { readdir, readFile } from "node:fs/promises";
 import matter from "gray-matter";
 import Link from "next/link";
-// import path from 'node:path';
+import path from 'path';
 
 async function getPosts() {
-  // const path = await import('node:path');
-  // const publicDir = path.join(process.cwd(), 'public');
-  const publicDir = `${process.cwd()}/public`
+  const publicDir = path.join(process.cwd(), 'public');
 
   const entries = await readdir(publicDir, { withFileTypes: true });
   const dirs = entries
@@ -16,8 +14,8 @@ async function getPosts() {
     .map((entry) => entry.name);
 
   const fileContents = await Promise.all(
-    // dirs.map((dir) => readFile(path.join(publicDir, dir, "index.md"), "utf8")),
-    dirs.map((dir) => readFile(`${publicDir}/${dir}/index.md`, "utf8")),
+    dirs.map((dir) => readFile(path.join(publicDir, dir, "index.md"), "utf8")),
+    // dirs.map((dir) => readFile(`${publicDir}/${dir}/index.md`, "utf8")),
   );
   const posts = dirs.map((slug, i) => {
     const fileContent = fileContents[i];
