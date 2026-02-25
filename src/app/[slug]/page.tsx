@@ -3,14 +3,19 @@ import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Link from "next/link";
 import path from "path";
+import { PostData } from "../../types";
 
-export default async function PostPage({ params }) {
+interface PostPageProps {
+  params: Promise<{ slug: string }>
+}
+
+export default async function PostPage({ params }: PostPageProps) {
   const { slug } = await params;
 
   const filePath = path.join(process.cwd(), 'public', slug, 'index.md');
   const file = await readFile(filePath, "utf8");
 
-  const { content, data } = matter(file);
+  const { content, data } = matter(file) as unknown as { data: PostData, content: string };
 
   const fixedContent = content.replace(
     /!\[(.*?)\]\(\.?\/(.*?)\)/g, 
