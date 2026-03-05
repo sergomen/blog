@@ -1,6 +1,7 @@
 import './globals.css';
 import Navbar from './components/Navbar';
 import { Analytics } from "@vercel/analytics/react";
+import ScrollToTop from './components/scroll-to-top';
 
 export const metadata = {
   title: "seriu&apos;s Blog",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <ScrollToTop />
         <div className="mx-auto max-w-2xl px-6">
           {header}
           {children}
