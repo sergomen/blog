@@ -1,7 +1,7 @@
 import './globals.css';
-import Navbar from './components/Navbar';
+import Navbar from '../components/Navbar';
 import { Analytics } from "@vercel/analytics/react";
-import ScrollToTop from './components/scroll-to-top';
+import ScrollToTop from '../components/scroll-to-top';
 
 export const metadata = {
   title: "seriu&apos;s Blog",
