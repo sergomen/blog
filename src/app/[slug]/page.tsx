@@ -1,9 +1,11 @@
 import { readFile } from "node:fs/promises";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
-import Link from "next/link";
 import path from "path";
 import { PostData } from "../../types";
+import { notFound } from "next/navigation";
+import { existsSync } from "fs";
+import GoBackButton from "../../components/go-back-button";
 
 interface PostPageProps {
   params: Promise<{ slug: string }>
@@ -11,8 +13,12 @@ interface PostPageProps {
 
 export default async function PostPage({ params }: PostPageProps) {
   const { slug } = await params;
-
   const filePath = path.join(process.cwd(), 'public', slug, 'index.md');
+
+  if (!existsSync(filePath)) {
+    notFound();
+  }
+
   const file = await readFile(filePath, "utf8");
 
   const { content, data } = matter(file) as unknown as { data: PostData, content: string };
@@ -31,9 +37,7 @@ export default async function PostPage({ params }: PostPageProps) {
           {fixedContent}
         </Markdown>
       </article>
-      <nav className="mt-8">
-        <Link href="/" className="hover:underline">← Back</Link>
-      </nav>
+      <GoBackButton />
     </main>
   )
 }
