@@ -1,7 +1,6 @@
 import './globals.css';
 import Navbar from '../components/Navbar';
 import { Analytics } from "@vercel/analytics/react";
-import ScrollToTop from '../components/scroll-to-top';
 
 export const metadata = {
   title: "seriu&apos;s Blog",
@@ -26,11 +25,12 @@ const footer = (
   </footer>
 )
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children:React.ReactNode}) {
   return (
-    <html lang="en">
+    <html 
+      lang="en"
+    >
       <body>
-        <ScrollToTop />
         <div className="mx-auto max-w-2xl px-6">
           {header}
           {children}
